@@ -79,7 +79,7 @@ namespace Calculator.Test.Unit
         }
 
         //Divide
-        [TestCase(5, 2.5, TestName = "5*(-1) = -5")]
+        [TestCase(5, -5, TestName = "5*(-1) = -5")]
         public void InvertTest(double a, double b)
         {
 
