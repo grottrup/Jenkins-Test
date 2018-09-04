@@ -3,27 +3,37 @@
 namespace Calculator
 {
 
-    public class Calculator : IClaculator
+    public class Calculator : ICalculator
     {
         public Calculator(){ }
-        public double add(double a, double b)
+        public double Add(double a, double b)
         {
             return a + b;
         }
 
-        public double subtract(double a, double b)
+        public double Subtract(double a, double b)
         {
             return a - b;
         }
 
-        public double multiply(double a, double b)
+        public double Multiply(double a, double b)
         {
             return a * b;
         }
 
-        public double power(double a, double b)
+        public double Power(double a, double b)
         {
             return Math.Pow(a, b);
+        }
+
+        public double Divide(double a, double b)
+        {
+            return a / b;
+        }
+
+        public double Invert(double a)
+        {
+            return a * (-1);
         }
     }
 }

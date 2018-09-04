@@ -12,7 +12,7 @@ namespace Calculator.Test.Unit
     public class CalculatorUnitTest
     {
         //setup
-        private IClaculator _uut;
+        private ICalculator _uut;
         [SetUp]
         public void Setup()
         {
@@ -23,21 +23,21 @@ namespace Calculator.Test.Unit
         [Test]
         public void Add_Add5And5_Returns10()
         {
-           Assert.That(_uut.add(5, 5), Is.EqualTo(10));
+           Assert.That(_uut.Add(5, 5), Is.EqualTo(10));
         }
 
         [Test]
         public void Add_AddMinus5And6_Returns2()
         {
          
-            Assert.That(_uut.add(-5, 7), Is.EqualTo(2));
+            Assert.That(_uut.Add(-5, 7), Is.EqualTo(2));
         }
 
         [Test]
         public void Add_AddMinus5AndMinus6_ReturnsMinus11()
         {
             
-            Assert.That(_uut.add(-5, -6), Is.EqualTo(-11.0));
+            Assert.That(_uut.Add(-5, -6), Is.EqualTo(-11.0));
         }
         
         //Subtract ved hjælp af TestCase
@@ -47,7 +47,7 @@ namespace Calculator.Test.Unit
         public void SubtractTest(double a, double b, double c)
         {
             
-            Assert.That(_uut.subtract(a, b), Is.EqualTo(c));
+            Assert.That(_uut.Subtract(a, b), Is.EqualTo(c));
         }
 
         //Multiply
@@ -57,7 +57,7 @@ namespace Calculator.Test.Unit
         public void MultiplyTest(double a, double b, double c)
         {
             
-            Assert.That(_uut.multiply(a, b), Is.EqualTo(c));
+            Assert.That(_uut.Multiply(a, b), Is.EqualTo(c));
         }
 
         //Power
@@ -67,7 +67,24 @@ namespace Calculator.Test.Unit
         public void PowerTest(double a, double b, double c)
         {
             
-            Assert.That(_uut.power(a, b), Is.EqualTo(c));
+            Assert.That(_uut.Power(a, b), Is.EqualTo(c));
+        }
+
+        //Divide
+        [TestCase(5, 2, 2.5, TestName = "5 / 2 = 2.5")]
+        [TestCase(4, 2, 8, TestName = "4*2 = 8")]
+        public void DivideTest(double a, double b, double c)
+        {
+
+            Assert.That(_uut.Divide(a, b), Is.EqualTo(c));
+        }
+
+        //Divide
+        [TestCase(5, 2.5, TestName = "5*(-1) = -5")]
+        public void InvertTest(double a, double b)
+        {
+
+            Assert.That(_uut.Invert(a), Is.EqualTo(b));
         }
 
     }

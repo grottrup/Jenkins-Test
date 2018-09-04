@@ -4,12 +4,13 @@ using System.Text;
 
 namespace Calculator
 {
-    public interface IClaculator
+    public interface ICalculator
     {
-        double add(double a, double b);
-        double subtract(double a, double b);
-
-        double multiply(double a, double b);
-        double power(double a, double b);
+        double Add(double a, double b);
+        double Subtract(double a, double b);
+        double Multiply(double a, double b);
+        double Power(double a, double b);
+        double Divide(double a, double b);
+        double Invert(double a);
     }
 }
