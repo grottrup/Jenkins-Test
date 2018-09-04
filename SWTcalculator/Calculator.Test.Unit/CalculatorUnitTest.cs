@@ -72,7 +72,6 @@ namespace Calculator.Test.Unit
 
         //Divide
         [TestCase(5, 2, 2.5, TestName = "5 / 2 = 2.5")]
-        [TestCase(4, 2, 8, TestName = "4*2 = 8")]
         public void DivideTest(double a, double b, double c)
         {
 
