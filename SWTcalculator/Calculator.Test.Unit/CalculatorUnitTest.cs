@@ -11,15 +11,14 @@ namespace Calculator.Test.Unit
     [TestFixture]
     public class CalculatorUnitTest
     {
-        //setup
         private ICalculator _uut;
+
         [SetUp]
         public void Setup()
         {
             _uut = new Calculator();
         }
 
-        //Add ved hjælp af Test
         [Test]
         public void Add_Add5And5_Returns10()
         {
@@ -40,7 +39,6 @@ namespace Calculator.Test.Unit
             Assert.That(_uut.Add(-5, -6), Is.EqualTo(-11.0));
         }
         
-        //Subtract ved hjælp af TestCase
         [TestCase(9,6,3, TestName = "Subtract 9-6 = 3")]
         [TestCase(-9, 6, -15, TestName = "Subtract -9-6 = -15")]
         [TestCase(-9, -6, -3, TestName = "Subtract -9-(-6) = -3")]
@@ -72,17 +70,20 @@ namespace Calculator.Test.Unit
 
         //Divide
         [TestCase(5, 2, 2.5, TestName = "5 / 2 = 2.5")]
+        [TestCase(5, 100, 2.5, TestName = "5 / 100 = 0.05")]
+        [TestCase(1, -1, -1, TestName = "1 / -1 = -1")]
         public void DivideTest(double a, double b, double c)
         {
 
             Assert.That(_uut.Divide(a, b), Is.EqualTo(c));
         }
 
-        //Divide
+        //Invert
         [TestCase(5, -5, TestName = "5*(-1) = -5")]
+        [TestCase(99, -99, TestName = "5*(-1) = -5")]
+        [TestCase(-3, 3, TestName = "5*(-1) = -5")]
         public void InvertTest(double a, double b)
         {
-
             Assert.That(_uut.Invert(a), Is.EqualTo(b));
         }
 
