@@ -182,11 +182,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\sem2018F\\Jenkins-Test\\SWTcalculator\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "C:\\Git\\Jenkins-Test\\SWTcalculator\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "C:\\Git\\sem2018F\\Jenkins-Test\\SWTcalculator\\Calculator\\Calculator.csproj",
+      "projectPath": "C:\\Git\\Jenkins-Test\\SWTcalculator\\Calculator\\Calculator.csproj",
       "packagesPath": "C:\\Users\\Simon\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\sem2018F\\Jenkins-Test\\SWTcalculator\\Calculator\\obj\\",
+      "outputPath": "C:\\Git\\Jenkins-Test\\SWTcalculator\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
