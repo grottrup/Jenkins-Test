@@ -70,7 +70,7 @@ namespace Calculator.Test.Unit
 
         //Divide
         [TestCase(5, 2, 2.5, TestName = "5 / 2 = 2.5")]
-        [TestCase(5, 100, 2.5, TestName = "5 / 100 = 0.05")]
+        [TestCase(5, 100, 0.05, TestName = "5 / 100 = 0.05")]
         [TestCase(1, -1, -1, TestName = "1 / -1 = -1")]
         public void DivideTest(double a, double b, double c)
         {
