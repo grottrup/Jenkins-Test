@@ -1,7 +1,8 @@
 
 # How to use Jenkins
 
-Lab Exercise: Setting up Jenkins to run and report Test Coverage
+## Lab Exercise: Setting up Jenkins to run and report Test Coverage
+
 In this exercise you will setup Coverage reporting on our Jenkins server, with build and test of the Calculator-exercise
 your started last week.
 The Jenkins Project will pull the latest version from your GitHub repository, before it builds and tests this latest
